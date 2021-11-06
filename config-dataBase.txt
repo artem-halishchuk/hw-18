@@ -1,0 +1,6 @@
+create table notes(
+                      id SERIAL primary key,
+                      name varchar(40),
+                      note text
+);
+insert into notes (name, note) values ('note-2', 'text-2'); /*добавляет запись*/

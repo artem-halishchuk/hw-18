@@ -1,7 +1,7 @@
 let bodyParser = require('body-parser');
 let DefaultResponse = require('./dto/default-response');
 let pgp = require('pg-promise')();
-let db = pgp('postgres://postgres:somePassword@localhost:5432/note');
+let db = pgp('postgres://postgres:somePassword@localhost:5432/postgres');
 
 function usersController(app, path) {
     let jsonParser = bodyParser.json();
